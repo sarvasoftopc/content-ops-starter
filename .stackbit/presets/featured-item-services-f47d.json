@@ -1,0 +1,53 @@
+{
+    "model": "FeaturedItem",
+    "srcType": "git",
+    "srcProjectId": "9a0364b9",
+    "presets": [
+        {
+            "label": "services",
+            "locale": null,
+            "metadata": {
+                "categories": [
+                    "services"
+                ],
+                "canDelete": true
+            },
+            "data": {
+                "title": "Android Development Services",
+                "tagline": "",
+                "subtitle": "",
+                "text": "We provide full-cycle Android development services optimized for payments, POS terminals, and custom devices.\n\n*   EMV-compliant Android POS applications (C2, C3, C4, C8 kernel support)\n\n*   Custom SDK development for OEMs and payment vendors\n\n*   Android L2 Kernel app development and HAL integration\n\n*   Secure mobile apps for consumer and enterprise use\n\n*   Technical consulting, audits, and code reviews\n\n",
+                "image": {
+                    "$$type": "ImageBlock",
+                    "url": {
+                        "$$ref": "stackbit_asset_id:static:public/images/19199321.jpg",
+                        "$$type": "__asset_model"
+                    },
+                    "altText": "Placeholder text",
+                    "elementId": null,
+                    "styles": {
+                        "self": {
+                            "borderRadius": "x-large"
+                        }
+                    }
+                },
+                "actions": [],
+                "elementId": null,
+                "colors": "bg-light-fg-dark",
+                "styles": {
+                    "self": {
+                        "padding": [
+                            "pt-8",
+                            "pl-8",
+                            "pb-8",
+                            "pr-8"
+                        ],
+                        "borderRadius": "x-large",
+                        "flexDirection": "col"
+                    }
+                }
+            },
+            "thumbnail": "images/featured-item-services-f47d.png"
+        }
+    ]
+}

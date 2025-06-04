@@ -4,14 +4,13 @@ slug: /
 sections:
   - type: GenericSection
     title:
-      text: Unblock your team boost your time to production
+      text: Optimised Performance & Compliance
       color: text-dark
       type: TitleBlock
-    subtitle: Subtitle goes here
-    text: >
-      A Netlify Create website is a git repo that you own. Every code commit is
-      instantly reflected in the visual editor and since every visual edit is a
-      git commit, git workflows and collaboration just work.
+    subtitle: THE Company that CRAFTS
+    text: |
+      **TAILORED**, **HIGH-PERFORMACE SOFTWARE**
+      FOR BUSINESSES SEEKING BEYOND-THE-ORDINARY SOLUTIONS.
     actions:
       - label: Get started
         altText: ''
@@ -32,12 +31,12 @@ sections:
         elementId: ''
         type: Link
     media:
-      url: /images/main-hero.svg
+      url: /images/hand-drawn-flat-design-api-illustration.png
       altText: Unblock your team boost your time to production preview
       elementId: ''
       type: ImageBlock
     badge:
-      label: This is a badge
+      label: ''
       color: text-primary
       type: Badge
     elementId: ''
@@ -53,56 +52,50 @@ sections:
           - pr-16
   - type: FeaturedItemsSection
     title:
-      text: Key Benefits
+      text: Services
       color: text-dark
       styles:
         self:
           textAlign: center
+          fontWeight: 500
       type: TitleBlock
-    subtitle: Subtitle goes here
+    subtitle: >-
+      End To End Software Solution Development, Integration, Security and
+      Compliance Consultation
     items:
       - type: FeaturedItem
-        title: 500k
-        subtitle: Numbers Done
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        actions: []
-        elementId: null
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: row
-            justifyContent: center
-            textAlign: left
+        title: Android Development
+        tagline: ''
+        subtitle: ''
+        text: >+
+          We provide full-cycle Android development services optimized for
+          payments, POS terminals, and custom devices.
+
+
+          *   EMV-compliant Android POS applications (C2, C3, C4, C8 kernel
+          support)
+
+
+          *   Custom SDK development for OEMs and payment vendors
+
+
+          *   Android L2 Kernel app development and HAL integration
+
+
+          *   Secure mobile apps for consumer and enterprise use
+
+
+          *   Technical consulting, audits, and code reviews
+
         image:
           type: ImageBlock
-          altText: Lightning bolt symbol on red background
-          elementId: ''
-          url: /images/icon1.svg
+          url: /images/19199321.jpg
+          altText: Placeholder text
           styles:
             self:
               borderRadius: x-large
-      - title: 20x
-        subtitle: The Job Stuff
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/icon2.svg
-          altText: Featured icon two
-          elementId: ''
-          type: ImageBlock
         actions: []
-        colors: bg-neutralAlt-fg-dark
+        colors: bg-light-fg-dark
         styles:
           self:
             padding:
@@ -111,23 +104,36 @@ sections:
               - pb-8
               - pr-8
             borderRadius: x-large
-            flexDirection: row
-            textAlign: left
-            justifyContent: center
-        type: FeaturedItem
-      - title: 200%
-        subtitle: Faster
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+            flexDirection: col
+      - type: FeaturedItem
+        title: iOS Development
+        tagline: ''
+        subtitle: ''
+        text: >+
+          Our iOS solutions focus on secure SDKs, contactless payments, and NFC
+          integrations, tailored for financial and enterprise ecosystems.
+
+
+          *   HCE SDKs for iOS with tap-to-pay features
+
+
+          *   C4 and C8 EMV kernel SDKs for contactless payments
+
+
+          *   Native iOS apps with advanced NFC & secure element integrations
+
+
+          *   iOS SDK consulting and architecture design
+
         image:
-          url: /images/icon3.svg
-          altText: Featured icon three
-          elementId: ''
           type: ImageBlock
+          url: /images/19199321.jpg
+          altText: Placeholder text
+          styles:
+            self:
+              borderRadius: x-large
         actions: []
-        colors: bg-neutralAlt-fg-dark
+        colors: bg-light-fg-dark
         styles:
           self:
             padding:
@@ -136,8 +142,127 @@ sections:
               - pb-8
               - pr-8
             borderRadius: x-large
-            flexDirection: row
-        type: FeaturedItem
+            flexDirection: col
+      - type: FeaturedItem
+        title: JAVACARD and eSIM
+        tagline: ''
+        subtitle: ''
+        text: >+
+          We specialise in secure element software for JavaCard, SIM Toolkit,
+          and eSIM provisioning.
+
+
+          *   Custom JavaCard applets for contact & contactless payments
+          (EMV-compliant)
+
+
+          *   SIM Toolkit applications for telecom operators
+
+
+          *   eSIM applets aligned with GSMA standards
+
+
+          *   Cryptographic logic integration: AES, RSA, HMAC
+
+
+          *   GP-compliant personalization and OTA support
+
+        image:
+          type: ImageBlock
+          url: /images/19199321.jpg
+          altText: Placeholder text
+          styles:
+            self:
+              borderRadius: x-large
+        actions: []
+        colors: bg-light-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: col
+      - type: FeaturedItem
+        title: REST APIS & Cryptography
+        tagline: ''
+        subtitle: ''
+        text: >+
+          We build secure and scalable backends, especially for fintech
+          platforms and identity systems, with deep expertise in API and
+          cryptographic standards.
+
+
+          *   RESTful API development using Spring Boot (Java/Kotlin)
+
+
+          *   Swagger/OpenAPI documentation for developer-friendly integration
+
+
+          *   PKCS #11/#12 certificate management and cryptographic operations
+
+
+          *   Encrypted communication, tokenization, and JWT integration
+
+        image:
+          type: ImageBlock
+          url: /images/19199321.jpg
+          altText: Placeholder text
+          styles:
+            self:
+              borderRadius: x-large
+        actions: []
+        colors: bg-light-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: col
+      - type: FeaturedItem
+        title: Java Applications Development
+        tagline: ''
+        subtitle: ''
+        text: >+
+          Custom Java software solutions for enterprise automation, secure
+          processing, and scalable backends.
+
+
+          *   Java-based command-line tools and automation scripts
+
+
+          *   Backend services for authentication, transaction processing, and
+          more
+
+
+          *   Modular micro-services or monolithic Spring Boot applications
+
+
+          *   Legacy system enhancements and code modernisation
+
+        image:
+          type: ImageBlock
+          url: /images/19199321.jpg
+          altText: Placeholder text
+          styles:
+            self:
+              borderRadius: x-large
+        actions: []
+        colors: bg-light-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: col
     actions:
       - label: Get started
         altText: ''
@@ -149,7 +274,7 @@ sections:
         elementId: ''
         type: Button
     badge:
-      label: This is a badge
+      label: ''
       color: text-primary
       styles:
         self:
@@ -199,15 +324,29 @@ sections:
       subtitle:
         textAlign: center
     type: ImageGallerySection
+  - type: DividerSection
+    title: Divider
+    elementId: ''
+    colors: bg-light-fg-dark
+    styles:
+      self:
+        padding:
+          - pt-3
+          - pl-3
+          - pb-3
+          - pr-3
   - posts:
       - content/pages/blog/case-study-1.md
       - content/pages/blog/case-study-2.md
       - content/pages/blog/case-study-3.md
+      - content/pages/blog/case-study-4.md
+      - content/pages/blog/case-study-5.md
+      - content/pages/blog/case-study-6.md
     showThumbnail: true
     showDate: true
     showAuthor: true
     variant: three-col-grid
-    colors: bg-light-fg-dark
+    colors: bg-neutral-fg-dark
     styles:
       self:
         padding:
@@ -218,6 +357,14 @@ sections:
         justifyContent: center
     type: FeaturedPostsSection
     hoverEffect: move-up
+    title:
+      type: TitleBlock
+      text: Our Work
+      color: text-dark
+      styles:
+        self:
+          textAlign: center
+          fontWeight: 500
   - title: Divider
     colors: bg-light-fg-dark
     styles:
@@ -435,7 +582,8 @@ sections:
             justifyContent: center
         type: FeaturedItem
       - title: >-
-          "Design is a plan for arranging elements in such a way as best to accomplish a particular purpose."
+          "Design is a plan for arranging elements in such a way as best to
+          accomplish a particular purpose."
         tagline: Testimonial 2
         subtitle: 'John Doe, Company'
         text: >-
@@ -464,7 +612,8 @@ sections:
             justifyContent: center
         type: FeaturedItem
       - title: >-
-          "Design is how it works, how it functions. Good design doesn't just make a product aesthetically pleasing, it makes it a pleasure to use."
+          "Design is how it works, how it functions. Good design doesn't just
+          make a product aesthetically pleasing, it makes it a pleasure to use."
         tagline: Testimonial 3
         subtitle: 'Maria Walters, Company'
         text: >-
@@ -523,7 +672,8 @@ sections:
             justifyContent: center
         type: FeaturedItem
       - title: >-
-          "Design can be art. Design can be aesthetics. Design is so simple, that's why it is so complicated."
+          "Design can be art. Design can be aesthetics. Design is so simple,
+          that's why it is so complicated."
         tagline: Testimonial 5
         subtitle: 'Jane Walters, Company'
         text: >-
@@ -552,7 +702,8 @@ sections:
             justifyContent: center
         type: FeaturedItem
       - title: >-
-          “Quote from some important person goes right here. I love using Netlify Create.”
+          “Quote from some important person goes right here. I love using
+          Netlify Create.”
         tagline: Testimonial 6
         subtitle: 'Jane Doe, Company'
         text: >-
@@ -646,8 +797,9 @@ sections:
       - title: Feature Item Three
         tagline: This is the tagline
         subtitle: This is the item subtitle
-        text: |
-          Learn from the tutorial and build your first awesome Netlify Create site.
+        text: >
+          Learn from the tutorial and build your first awesome Netlify Create
+          site.
         image:
           url: /images/abstract-feature1.svg
           altText: Placeholder image

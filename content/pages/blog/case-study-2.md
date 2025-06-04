@@ -1,5 +1,5 @@
 ---
-title: Case study 2
+title: "\U0001F510 EMV XDA & ODE Signature Ecosystem for JavaCard Smartcards"
 slug: case-study-2
 date: '2022-02-16'
 excerpt: >-
@@ -87,17 +87,89 @@ styles:
     flexDirection: col
 type: PostLayout
 ---
+#### 🏢 **Background**
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante lorem, tincidunt ac leo efficitur, feugiat tempor odio. Curabitur at auctor sapien. Etiam at cursus enim. Suspendisse sed augue tortor. Nunc eu magna vitae lorem pellentesque fermentum. Sed in facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper. Donec sed facilisis nibh. Curabitur eget dui in libero euismod commodo nec sit amet est. Etiam id ipsum aliquam, vehicula erat sit amet, consequat tortor.
+A global payment network operator (under NDA) needed to implement **EMV Book 2-compliant XDA (Static Data Authentication)** and **ODE (Offline Dynamic Signature)** mechanisms on JavaCard-based smartcards that lacked native ECC (Elliptic Curve Cryptography) support.
 
-![](/images/img-placeholder.svg)
+The solution had to support **secure offline authentication** using ECC-based digital signatures during EMV transactions, without depending on vendor-provided cryptographic APIs — ensuring maximum portability and control.
 
-Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque imperdiet venenatis. In malesuada sed urna eget vehicula. Donec fermentum tortor sit amet nisl elementum fringilla. Pellentesque dapibus suscipit faucibus. Nullam malesuada sed urna quis rutrum. Donec facilisis lorem id maximus mattis. Vestibulum quis elit magna. Vestibulum accumsan blandit consequat. Phasellus quis posuere quam.
+The implementation was aimed at enabling offline-capable smartcard products for regions with low connectivity and needed to pass stringent certification tests by an external lab before deployment.
 
-Vestibulum ullamcorper risus auctor eleifend consequat. Vivamus mollis in tellus ac ullamcorper. Vestibulum sit amet bibendum ipsum, vitae rutrum ex. Nullam cursus, urna et dapibus aliquam, urna leo euismod metus, eu luctus justo mi eget mauris. Proin felis leo, volutpat et purus in, lacinia luctus eros. Pellentesque lobortis massa scelerisque lorem ullamcorper, sit amet elementum nulla scelerisque. In volutpat efficitur nulla, aliquam ornare lectus ultricies ac. Mauris sagittis ornare dictum. Nulla vel felis ut purus fermentum pretium. Sed id lectus ac diam aliquet venenatis. Etiam ac auctor enim. Nunc velit mauris, viverra vel orci ut, egestas rhoncus diam. Morbi scelerisque nibh tellus, vel varius urna malesuada sed. Etiam ultricies sem consequat, posuere urna non, maximus ex. Mauris gravida diam sed augue condimentum pulvinar vel ac dui. Integer vel convallis justo.
 
-> Nam rutrum magna sed pellentesque lobortis. Etiam quam mauris, iaculis eget ex ac, rutrum scelerisque nisl. Cras finibus dictum ex sed tincidunt. Morbi facilisis neque porta, blandit mauris quis, pharetra odio. Aliquam dictum quam quis elit auctor, at vestibulum ex pulvinar. Quisque lobortis a lectus quis faucibus. Nulla vitae pellentesque nibh, et fringilla erat. Praesent placerat ac est at tincidunt. Praesent ultricies a ex at ultrices.
->
-> _By Gordon Red - Director of IT_
 
-Aenean scelerisque ullamcorper est aliquet blandit. Donec ac tellus enim. Vivamus quis leo mattis, varius arcu at, convallis diam. Donec ac leo at nunc viverra molestie ac viverra nisi. Proin interdum at turpis at varius. Nunc sit amet ex suscipit, convallis ligula eu, pretium turpis. Sed ultricies neque vel mi malesuada, et mollis risus lobortis. Sed condimentum venenatis mauris, id elementum dolor gravida ac. Sed sodales tempus neque, quis iaculis arcu tincidunt ut. Donec vitae faucibus dui. In hac habitasse platea dictumst. Donec erat ex, ullamcorper a massa a, porttitor porta ligula.
+#### ❗ **The Challenge**
+
+Implementing EMV-compliant ECC on JavaCard with no built-in ECC libraries required overcoming multiple limitations:
+
+*   ✅ Perform ECC-based signature generation and verification with **only basic JavaCard operations** (no BigInteger, no ECC primitives).
+
+*   ✅ Fit all cryptographic operations into **severely constrained RAM and EEPROM** environments.
+
+*   ✅ Achieve deterministic, certifiable behavior for **XDA and ODE** as required by EMV Book 2.
+
+*   ✅ Support **lab-level testing and certification**, requiring exact signature reproducibility and EMV test case coverage.
+
+*   ✅ Extend the ecosystem to work with the client’s existing test tools and deployment processes.
+
+Most providers use native ECC libraries or move critical logic off-card — we delivered **100% on-card ECC**, from scratch.
+
+
+
+#### 👨‍💻 **My Role**
+
+As the sole architect and JavaCard developer, I:
+
+*   🔬 **Engineered cryptographic primitives**: Created modular math functions (multiplication, subtraction, modular inverse, XOR, scalar multiplication) to simulate ECC point operations in JavaCard.
+
+*   💻 **Developed a custom applet**: Built a secure, certifiable JavaCard applet supporting EMV XDA (static signature) and ODE (dynamic challenge-based signature).
+
+*   🧪 **Upgraded test tooling**: Extended the client’s APDU test tool to auto-generate signature test vectors and verify correctness across different card batches.
+
+*   🧰 **Optimized low-level logic**: Reduced memory footprint, improved speed, and avoided GC stalls and memory leaks in the absence of heap monitoring.
+
+*   🏁 **Supported certification**: Collaborated with the lab to provide deterministic output and resolved test case issues that blocked certification.
+
+
+
+#### 💡 **The Solution**
+
+The final deliverable was a **portable and certifiable ECC signature engine** embedded within a JavaCard applet:
+
+*   ✅ Fully compliant with EMV Book 2 XDA & ODE signature schemes.
+
+*   ✅ Custom ECC signature generation using on-card arithmetic operations.
+
+*   ✅ Offline dynamic response signing using internal card challenge logic.
+
+*   ✅ Lab-testable with fixed seed values for predictable output.
+
+*   ✅ Easily portable across JavaCard 3.x platforms, independent of vendor APIs.
+
+The project also included a **simulator testing framework** for signing/verifying APDUs, and a **cryptographic math module** for use in future applets.
+
+
+
+#### ✅ **The Outcome**
+
+*   🏅 **Lab-certified** ECC signature ecosystem approved for EMV XDA and ODE.
+
+*   🚀 Enabled deployment of offline-capable EMV JavaCards in low-connectivity regions.
+
+*   🧩 Became the client's **reference cryptographic library** for internal JavaCard development.
+
+*   🔒 Delivered a **vendor-agnostic** and **fully self-contained** JavaCard crypto stack.
+
+
+
+#### 🔧 **Tech Stack**
+
+*   **Platform:** JavaCard 3.x, GlobalPlatform 2.2.1
+
+*   **Cryptography:** EMV Book 2, Custom ECC (no native support), Modular Math APIs
+
+*   **Languages:** JavaCard (CAP files), APDU scripting
+
+*   **Tools:** JCIDE, APDU Debuggers, Certification Lab Suite
+
+*   **Other:** Lab certification support, simulator tool integration, deterministic testing framework
+

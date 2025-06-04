@@ -1,7 +1,7 @@
 ---
-title: Case study 1
+title: Enabling EMV Contactless Payments on Android POS for EU Market
 slug: case-study-1
-date: '2022-01-05'
+date: '2025-05-25'
 excerpt: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante lorem,
   tincidunt ac leo efficitur, feugiat tempor odio. Curabitur at auctor sapien.
@@ -70,7 +70,7 @@ bottomSections:
       subtitle:
         textAlign: center
     type: FeaturedItemsSection
-isFeatured: true
+isFeatured: false
 colors: bg-light-fg-dark
 styles:
   self:
@@ -87,15 +87,86 @@ styles:
     flexDirection: col
 type: PostLayout
 ---
+### 🏢 Background
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante lorem, tincidunt ac leo efficitur, feugiat tempor odio. Curabitur at auctor sapien. Etiam at cursus enim. Suspendisse sed augue tortor. Nunc eu magna vitae lorem pellentesque fermentum. Sed in facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper. Donec sed facilisis nibh. Curabitur eget dui in libero euismod commodo nec sit amet est. Etiam id ipsum aliquam, vehicula erat sit amet, consequat tortor.
+A European payment solutions provider (under NDA) approached me to develop a **NEXO-compliant, EMV-certified Point of Sale (POS) application** from the ground up. The client specializes in Android-based payment terminals and needed a **fast, reliable**, and **fully certifiable POS app** for the European market that adhered to **NEXO Fast specifications** and passed **CFCF.eu certification**.
 
-> Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque imperdiet venenatis. In malesuada sed urna eget vehicula. Donec fermentum tortor sit amet nisl elementum fringilla. Pellentesque dapibus suscipit faucibus. Nullam malesuada sed urna quis rutrum. Donec facilisis lorem id maximus mattis. Vestibulum quis elit magna. Vestibulum accumsan blandit consequat. Phasellus quis posuere quam.
->
-> _By Clara White - VP of Marketing_
+Their goal was to deploy the solution across thousands of Newland and Sunmi Android terminals used by merchants in retail and hospitality environments.
 
-Vestibulum ullamcorper risus auctor eleifend consequat. Vivamus mollis in tellus ac ullamcorper. Vestibulum sit amet bibendum ipsum, vitae rutrum ex. Nullam cursus, urna et dapibus aliquam, urna leo euismod metus, eu luctus justo mi eget mauris. Proin felis leo, volutpat et purus in, lacinia luctus eros. Pellentesque lobortis massa scelerisque lorem ullamcorper, sit amet elementum nulla scelerisque. In volutpat efficitur nulla, aliquam ornare lectus ultricies ac. Mauris sagittis ornare dictum. Nulla vel felis ut purus fermentum pretium. Sed id lectus ac diam aliquet venenatis. Etiam ac auctor enim. Nunc velit mauris, viverra vel orci ut, egestas rhoncus diam. Morbi scelerisque nibh tellus, vel varius urna malesuada sed. Etiam ultricies sem consequat, posuere urna non, maximus ex. Mauris gravida diam sed augue condimentum pulvinar vel ac dui. Integer vel convallis justo.
 
-![](/images/img-placeholder.svg)
+### ❗ The Challenge
 
-Nam rutrum magna sed pellentesque lobortis. Etiam quam mauris, iaculis eget ex ac, rutrum scelerisque nisl. Cras finibus dictum ex sed tincidunt. Morbi facilisis neque porta, blandit mauris quis, pharetra odio. Aliquam dictum quam quis elit auctor, at vestibulum ex pulvinar. Quisque lobortis a lectus quis faucibus. Nulla vitae pellentesque nibh, et fringilla erat. Praesent placerat ac est at tincidunt. Praesent ultricies a ex at ultrices. Etiam sed tincidunt elit. Nulla sagittis neque neque, ultrices dignissim sapien pellentesque faucibus. Donec tempor orci sed consectetur dictum. Ut viverra ut enim ac semper. Integer lacinia sem in arcu tempor faucibus eget non urna. Praesent vel nunc eu libero aliquet interdum non vitae elit. Maecenas pharetra ipsum dolor, et iaculis elit ornare ac.
+Building a POS app for the European market that adheres to **NEXO 4 and 5 protocols** is no small feat. The system had to:
+
+*   Support **contactless EMV transactions**, including secure kernel communication.
+
+*   Comply with **NEXO Fast Application Layer Protocol**, which demands rigid adherence to ISO 20022 messaging.
+
+*   Pass **certification through CFCF.eu**, requiring strict protocol and functional conformity.
+
+*   Be efficient and modular enough to run on low-power Android POS terminals.
+
+*   Be delivered by a single developer within tight deadlines.
+
+Most providers solve this with a large team — but the client wanted an **efficient, expert-led solution** without compromising quality or certification requirements.
+
+### 👨‍💻 My Role
+
+As the **sole engineer and architect** from my OPC company, I led the entire lifecycle:
+
+*   **System Architecture**: Designed a modular and testable Android POS framework.
+
+*   **Protocol Implementation**: Implemented the full NEXO Fast stack and EMV Level 2 kernel interface.
+
+*   **Secure Integration**: Handled transaction flows, card communication, and response parsing.
+
+*   **Debugging & Certification Prep**: Simulated test cases, resolved certification issues, and worked closely with the lab for CFCF approval.
+
+*   **Deployment Support**: Optimized the APK for Sunmi and Newland hardware and delivered production-ready builds.
+
+### 💡 The Solution
+
+I developed a **fully compliant Android POS app** using Kotlin that:
+
+*   Seamlessly integrates with **EMV Level 2 kernels** for contact and contactless transactions.
+
+*   Implements **NEXO Fast v4/v5 protocol stack**, handling messaging, status words, and session control.
+
+*   Offers a dynamic merchant interface for transaction display and receipt printing.
+
+*   Supports fallback and retry mechanisms for real-world payment conditions.
+
+*   Includes secure configuration loading and transaction logging as per NEXO mandates.
+
+This solution was tailored for **Sunmi and Newland terminals**, ensuring compatibility with their printer modules, NFC readers, and secure elements.
+
+### ✅ The Outcome
+
+*   **Successfully certified** under **CFCF.eu**, passing all protocol, functional, and security test cases.
+
+*   Deployed across **10,000+ terminals** in production within the EU.
+
+*   Reduced client’s go-to-market time by **over 6 months** compared to outsourcing to a large team.
+
+*   Delivered an app that is **modular**, **future-proof**, and **easily maintainable**.
+
+
+
+### 🔧 Tech Stack
+
+*   **Language**: Kotlin, Java
+
+*   **Platform**: Android (Sunmi, Newland)
+
+*   **Protocols**: EMV Level 2 Kernel, NEXO Fast v4/v5, ISO 20022
+
+*   **Tools**: Android Studio, CFCF Certification Suite, Terminal Simulators
+
+*   **Other**: SQLite, Secure Print Modules, Logcat Analysis Tools
+
+
+
+### 🎯 Why It Matters
+
+This case demonstrates that **a single-expert company** can deliver highly regulated, complex fintech software with agility, quality, and certification readiness. By deeply understanding both the **protocols** and the **business landscape**, I was able to offer a **faster and more cost-effective solution** than larger development houses.
+
