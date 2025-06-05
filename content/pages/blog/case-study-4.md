@@ -9,7 +9,7 @@ excerpt: >-
   pellentesque fermentum. Sed in facilisis dui.
 featuredImage:
   type: ImageBlock
-  url: /images/img-placeholder.svg
+  url: '/images/ChatGPT Image Jun 5, 2025, 06_57_39 PM.png'
   altText: Case study 3
   styles:
     self:

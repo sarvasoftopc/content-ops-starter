@@ -64,7 +64,7 @@ sections:
       Compliance Consultation
     items:
       - type: FeaturedItem
-        title: Android Development
+        title: Android Solutions
         tagline: ''
         subtitle: ''
         text: >+
@@ -89,7 +89,7 @@ sections:
 
         image:
           type: ImageBlock
-          url: /images/19199321.jpg
+          url: /images/9564770.jpg
           altText: Placeholder text
           styles:
             self:
@@ -106,7 +106,7 @@ sections:
             borderRadius: x-large
             flexDirection: col
       - type: FeaturedItem
-        title: iOS Development
+        title: iOS Solutions
         tagline: ''
         subtitle: ''
         text: >+
@@ -127,7 +127,7 @@ sections:
 
         image:
           type: ImageBlock
-          url: /images/19199321.jpg
+          url: /images/7176685.jpg
           altText: Placeholder text
           styles:
             self:
@@ -144,7 +144,7 @@ sections:
             borderRadius: x-large
             flexDirection: col
       - type: FeaturedItem
-        title: JAVACARD and eSIM
+        title: JavaCard Solutions
         tagline: ''
         subtitle: ''
         text: >+
@@ -169,7 +169,7 @@ sections:
 
         image:
           type: ImageBlock
-          url: /images/19199321.jpg
+          url: /images/Credit Card Security Flat.jpg
           altText: Placeholder text
           styles:
             self:
@@ -208,7 +208,7 @@ sections:
 
         image:
           type: ImageBlock
-          url: /images/19199321.jpg
+          url: /images/7461489.jpg
           altText: Placeholder text
           styles:
             self:
@@ -225,7 +225,7 @@ sections:
             borderRadius: x-large
             flexDirection: col
       - type: FeaturedItem
-        title: Java Applications Development
+        title: JAVA Solutions
         tagline: ''
         subtitle: ''
         text: >+
@@ -247,7 +247,7 @@ sections:
 
         image:
           type: ImageBlock
-          url: /images/19199321.jpg
+          url: /images/4002785.jpg
           altText: Placeholder text
           styles:
             self:
