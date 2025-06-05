@@ -11,29 +11,11 @@ sections:
     text: |
       **TAILORED**, **HIGH-PERFORMACE SOFTWARE**
       FOR BUSINESSES SEEKING BEYOND-THE-ORDINARY SOLUTIONS.
-    actions:
-      - label: Get started
-        altText: ''
-        url: /
-        showIcon: false
-        icon: arrowRight
-        iconPosition: right
-        style: secondary
-        elementId: ''
-        type: Button
-      - label: See Tutorials
-        altText: ''
-        url: /
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
-        style: primary
-        elementId: ''
-        type: Link
+    actions: []
     media:
       url: /images/hand-drawn-flat-design-api-illustration.png
       altText: Unblock your team boost your time to production preview
-      elementId: ''
+      elementId: image
       type: ImageBlock
     badge:
       label: ''
@@ -52,7 +34,7 @@ sections:
           - pr-16
   - type: FeaturedItemsSection
     title:
-      text: Services
+      text: Our Services
       color: text-dark
       styles:
         self:
@@ -263,16 +245,7 @@ sections:
               - pr-8
             borderRadius: x-large
             flexDirection: col
-    actions:
-      - label: Get started
-        altText: ''
-        url: /
-        showIcon: false
-        icon: arrowRight
-        iconPosition: right
-        style: primary
-        elementId: ''
-        type: Button
+    actions: []
     badge:
       label: ''
       color: text-primary
@@ -280,7 +253,7 @@ sections:
         self:
           textAlign: center
       type: Badge
-    elementId: ''
+    elementId: services
     variant: three-col-grid
     colors: bg-neutral-fg-dark
     styles:
@@ -293,37 +266,6 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
-  - subtitle: Award winning enterprises trust us
-    images:
-      - url: /images/empathy-logo.svg
-        altText: Empathy logo
-        type: ImageBlock
-      - url: /images/wellster-logo.svg
-        altText: Wellster logo
-        type: ImageBlock
-      - url: /images/vise-logo.svg
-        altText: Vise logo
-        type: ImageBlock
-      - url: /images/telus-logo.svg
-        altText: Telus logo
-        type: ImageBlock
-      - url: /images/contenful-logo.svg
-        altText: Contentful logo
-        type: ImageBlock
-      - url: /images/sanity-logo.svg
-        altText: Sanity logo
-        type: ImageBlock
-      - url: /images/rangle-logo.svg
-        altText: Rangle logo
-        type: ImageBlock
-    motion: move-to-left
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        justifyContent: center
-      subtitle:
-        textAlign: center
-    type: ImageGallerySection
   - type: DividerSection
     title: Divider
     elementId: ''
@@ -346,7 +288,7 @@ sections:
     showDate: true
     showAuthor: true
     variant: three-col-grid
-    colors: bg-neutral-fg-dark
+    colors: bg-light-fg-dark
     styles:
       self:
         padding:
@@ -355,6 +297,9 @@ sections:
           - pb-16
           - pr-16
         justifyContent: center
+      subtitle:
+        textAlign: center
+        fontWeight: 400
     type: FeaturedPostsSection
     hoverEffect: move-up
     title:
@@ -365,29 +310,28 @@ sections:
         self:
           textAlign: center
           fontWeight: 500
-  - title: Divider
+    elementId: ourwork
+    subtitle: 'Projects Developed and Delivered with Security, Compliance, and Precision'
+  - type: DividerSection
+    title: Divider
+    elementId: ''
     colors: bg-light-fg-dark
     styles:
       self:
         padding:
-          - pt-7
-          - pl-7
-          - pb-7
-          - pr-7
-    type: DividerSection
+          - pt-3
+          - pl-3
+          - pb-3
+          - pr-3
   - title:
-      text: Grow your business 10x faster
+      text: About US
       color: text-dark
       styles:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: This is a subtitle
-    text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+    subtitle: Secure. Scalable. Focused on the Future of Payments.
+    text: "At\_**Sarvasoft**, we solve the complex challenges of secure, scalable, and compliant payment system development. Our team brings deep, hands-on expertise in EMV technologies, fintech backends, Android POS, and cryptographic security—areas where most providers fall short or rely on third parties.\n\n<div style=\"text-align: center\">### **We’re not generalists—we're specialists.** </div>\n\nFrom custom EMV implementations to compliance-ready SDKs and secure APIs, we deliver robust solutions tailored for payment providers, banks, and fintech innovators.\n\nWhat sets us apart is our speed, precision, and domain expertise. As a lean, focused OPC, we move faster than traditional firms while maintaining enterprise-grade reliability. Our proven track record includes building certified solutions for mission-critical payment environments under strict compliance.\n\nWhether you're launching a new product, upgrading infrastructure, or navigating complex certification paths—**Sarvasoft**\_is your strategic technology partner.\n\nAt SARVASOFT, we prioritize innovation by leveraging cutting-edge technologies to enhance user experience. Our solutions are designed for scalability, ensuring they adapt to growing demands. Continuous improvement is embedded in our processes, allowing for agile responses to market changes. This approach fosters long-term partnerships and drives sustainable growth for our clients.\n\nWe believe in solving the right problems with the right tools—no buzzwords, just results.\n"
     media:
       title: Title of the video
       url: /images/placeholder-video.mp4
@@ -409,7 +353,7 @@ sections:
       loop: true
       muted: true
     badge:
-      label: Key Benefits
+      label: ''
       color: text-primary
       styles:
         self:
@@ -423,120 +367,7 @@ sections:
       subtitle:
         textAlign: center
     type: GenericSection
-  - type: GenericSection
-    title:
-      text: Generic section with a video
-      color: text-dark
-      styles:
-        self:
-          textAlign: left
-      type: TitleBlock
-    subtitle: Section with a video subtitle
-    text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
-    actions: []
-    media:
-      title: Title of the video
-      url: /images/placeholder-video.mp4
-      autoplay: true
-      loop: true
-      muted: true
-      controls: false
-      aspectRatio: '16:9'
-      styles:
-        self:
-          padding:
-            - pt-2
-            - pb-2
-            - pl-2
-            - pr-2
-          borderColor: border-dark
-          borderStyle: solid
-          borderWidth: 1
-          borderRadius: large
-      type: VideoBlock
-    elementId: null
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        flexDirection: row
-        justifyContent: center
-      subtitle:
-        textAlign: left
-  - title:
-      text: Social Media Management
-      color: text-dark
-      type: TitleBlock
-    subtitle: Increase your reach
-    text: >
-      A service that helps businesses to manage their social media accounts and
-      posts.
-    actions:
-      - label: Get started
-        url: /
-        icon: arrowRight
-        iconPosition: right
-        style: secondary
-        type: Button
-      - label: See Tutorials
-        url: /
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
-        style: primary
-        type: Link
-    media:
-      url: /images/hero2.svg
-      altText: Fun feature preview
-      type: ImageBlock
-    badge:
-      label: This is a badge
-      color: text-primary
-      type: Badge
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        alignItems: center
-    type: GenericSection
-  - title:
-      text: Business Consulting
-      color: text-dark
-      type: TitleBlock
-    subtitle: Be in good company
-    text: >
-      A service that provides advice and guidance to startups and small
-      businesses.
-    actions:
-      - label: Get started
-        url: /
-        icon: arrowRight
-        iconPosition: right
-        style: secondary
-        type: Button
-      - label: See Tutorials
-        url: /
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
-        style: primary
-        type: Link
-    media:
-      url: /images/hero3.svg
-      altText: Dope design preview
-      type: ImageBlock
-    badge:
-      label: This is a badge
-      color: text-primary
-      type: Badge
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        alignItems: center
-        flexDirection: row-reverse
-    type: GenericSection
+    elementId: about
   - title: Divider
     colors: bg-light-fg-dark
     styles:
@@ -551,17 +382,17 @@ sections:
     title: null
     subtitle: What our customers say about us
     items:
-      - title: >-
-          “A designer knows he has achieved perfection not when there is nothing
-          left to add, but when there is nothing left to take away.”
+      - title: '“Flawless delivery of a certified, multi-terminal POS solution.”'
         tagline: Testimonial 1
-        subtitle: 'Maria Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        subtitle: 'Client Type: European Payment Solutions Provider (Under NDA)'
+        text: >
+          An outstanding delivery of a fully compliant point-of-sale solution
+          across multiple terminal platforms. The development process was
+          smooth, well-documented, and aligned with stringent certification
+          requirements. We greatly valued the independent execution and
+          ownership demonstrated.
         image:
-          url: /images/person-placeholder-light.png
+          url: /images/3d-payment-terminal-bank-card-blue-checkmark.jpg
           altText: Maria Walters
           styles:
             self:
@@ -581,15 +412,15 @@ sections:
             flexDirection: row
             justifyContent: center
         type: FeaturedItem
-      - title: >-
-          "Design is a plan for arranging elements in such a way as best to
-          accomplish a particular purpose."
+      - title: '"A benchmark implementation of cryptography on constrained platforms."'
         tagline: Testimonial 2
-        subtitle: 'John Doe, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        subtitle: 'Client Type: Global Payment Network Operator (Under NDA)'
+        text: >
+          We were impressed by the technical depth and precision with which the
+          secure authentication system was developed. The ability to implement
+          such complex cryptographic logic on constrained devices exceeded our
+          expectations. This work became a cornerstone for our compliance
+          roadmap.
         image:
           url: /images/person-placeholder-light.png
           altText: John Doe
@@ -611,15 +442,14 @@ sections:
             flexDirection: row
             justifyContent: center
         type: FeaturedItem
-      - title: >-
-          "Design is how it works, how it functions. Good design doesn't just
-          make a product aesthetically pleasing, it makes it a pleasure to use."
+      - title: “Seamless SDK integration that unlocked secure mobile provisioning.”
         tagline: Testimonial 3
-        subtitle: 'Maria Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        subtitle: 'Client Type: Global Payment Network Operator (Under NDA)'
+        text: >
+          The SDK was lightweight, secure, and integrated seamlessly into our
+          mobile workflow. The team ensured high performance and followed all
+          platform best practices, enabling us to fast-track our mobile
+          provisioning strategy.
         image:
           url: /images/person-placeholder-light.png
           altText: Maria Walters
@@ -641,15 +471,16 @@ sections:
             flexDirection: row
             justifyContent: center
         type: FeaturedItem
-      - title: >-
-          “A designer knows he has achieved perfection not when there is nothing
-          left to add, but when there is nothing left to take away.”
+      - title: '“Efficient, real-time communication module that just works.”'
         tagline: Testimonial 4
-        subtitle: 'Maria Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        subtitle: >-
+          IoT platform provider and enterprise automation solution vendor (Under
+          NDA)
+        text: >
+          We needed a minimal and efficient solution for real-time device
+          communication—and that’s exactly what was delivered. The
+          implementation was elegant, reliable, and production-ready. It helped
+          us streamline our IoT data exchange pipeline.
         image:
           url: /images/person-placeholder-light.png
           altText: Maria Walters
@@ -672,14 +503,15 @@ sections:
             justifyContent: center
         type: FeaturedItem
       - title: >-
-          "Design can be art. Design can be aesthetics. Design is so simple,
-          that's why it is so complicated."
+          “Robust mutual TLS integration that elevated our security
+          architecture.”
         tagline: Testimonial 5
-        subtitle: 'Jane Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        subtitle: 'Client Type: Enterprise mobile security solutions provider (Under NDA)'
+        text: >
+          The team delivered a complete mTLS implementation that was secure,
+          standards-compliant, and easy to integrate. It strengthened our
+          client-server trust model and ensured secure communication across our
+          mobile ecosystem.
         image:
           url: /images/person-placeholder-light.png
           altText: Maria Walters
@@ -701,15 +533,16 @@ sections:
             flexDirection: row
             justifyContent: center
         type: FeaturedItem
-      - title: >-
-          “Quote from some important person goes right here. I love using
-          Netlify Create.”
+      - title: '“NFC APDU interactions made simple, fast, and device-compatible.”'
         tagline: Testimonial 6
-        subtitle: 'Jane Doe, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        subtitle: >-
+          Client Type: Fintech startup specializing in contactless payment and
+          identity solutions (Under NDA)
+        text: >
+          This application solved a major gap in our Android development
+          pipeline. The APDU implementation was clean, fast, and tested across a
+          wide range of devices. We appreciated the focus on compatibility and
+          user experience.
         image:
           url: /images/img-placeholder-dark.png
           altText: Jane Doe
@@ -731,7 +564,7 @@ sections:
             flexDirection: row
             justifyContent: center
         type: FeaturedItem
-    elementId: null
+    elementId: testimonials
     variant: next-prev-nav
     colors: bg-light-fg-dark
     styles:
@@ -739,108 +572,24 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
-  - title:
-      text: List of features here
-      color: text-primary
-      styles:
-        self:
-          textAlign: center
-      type: TitleBlock
-    subtitle: Featured items section subtitle
-    items:
-      - title: Feature Item One
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
-        text: |
-          Follow the tutorial to build your first Netlify Create site.
-        image:
-          url: /images/abstract-feature1.svg
-          altText: Placeholder Image
-          styles:
-            self:
-              borderRadius: x-large
-          type: ImageBlock
-        colors: bg-light-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: col
-        type: FeaturedItem
-      - title: Feature Item Two
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
-        text: |
-          Follow the tutorial to build your first awesome Netlify Create site.
-        image:
-          url: /images/abstract-feature2.svg
-          altText: Placeholder image
-          styles:
-            self:
-              borderRadius: x-large
-          type: ImageBlock
-        colors: bg-light-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: col
-        type: FeaturedItem
-      - title: Feature Item Three
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
-        text: >
-          Learn from the tutorial and build your first awesome Netlify Create
-          site.
-        image:
-          url: /images/abstract-feature1.svg
-          altText: Placeholder image
-          styles:
-            self:
-              borderRadius: x-large
-          type: ImageBlock
-        colors: bg-light-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: col
-        type: FeaturedItem
-    variant: three-col-grid
-    colors: bg-neutral-fg-dark
+  - type: DividerSection
+    title: Divider
+    elementId: ''
+    colors: bg-light-fg-dark
     styles:
       self:
         padding:
-          - pt-16
-          - pl-8
-          - pb-16
-          - pr-8
-        justifyContent: center
-      subtitle:
-        textAlign: center
-    type: FeaturedItemsSection
+          - pt-3
+          - pl-3
+          - pb-3
+          - pr-3
   - title:
-      text: Generic Section With A Form
+      text: Let's Connect
       color: text-dark
       type: TitleBlock
-    subtitle: Section with a form subtitle
-    text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+    subtitle: ''
+    text: |
+      **Let's build something custom, secure, and future-ready.**
     media:
       fields:
         - name: name
@@ -885,11 +634,12 @@ sections:
         style: primary
         elementId: null
     badge:
-      label: Contact Us
+      label: Reach US
       color: text-primary
       type: Badge
     colors: bg-light-fg-dark
     type: GenericSection
+    elementId: contactus
 seo:
   metaTitle: Home - Demo site
   metaDescription: This demo site is built with Netlify Create.

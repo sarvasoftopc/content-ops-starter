@@ -9,7 +9,7 @@ excerpt: >-
   pellentesque fermentum. Sed in facilisis dui.
 featuredImage:
   type: ImageBlock
-  url: /images/img-placeholder.svg
+  url: /images/Credit Card Security Flat.jpg
   altText: Case study 3
   styles:
     self:
