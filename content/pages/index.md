@@ -641,8 +641,8 @@ sections:
     type: GenericSection
     elementId: contactus
 seo:
-  metaTitle: Home - Demo site
-  metaDescription: This demo site is built with Netlify Create.
+  metaTitle: SarvaSoft
+  metaDescription: sarvasoft.com.
   socialImage: /images/main-hero.jpg
   type: Seo
 type: PageLayout
